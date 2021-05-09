@@ -566,7 +566,7 @@ a:active {
     background-position: left 5px center;
     background-size: 10px;
 }
-.poultry{
+#poultry{
     background-image: url(Images/poultry.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
