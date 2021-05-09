@@ -498,69 +498,69 @@ a:active {
     color: blue;
 
 }
-.argentina{
+#argentina{
     background-image: url(Images/argentina.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
-.australia{
+#australia{
     background-image: url(Images/australia.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
-.austria{
+#austria{
     background-image: url(Images/austria.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
-.chile{
+#chile{
     background-image: url(Images/chile.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
-.france{
+#france{
     background-image: url(Images/france.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
-.germany{
+#germany{
     background-image: url(Images/germany.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
-.italy{
+#italy{
     background-image: url(Images/italy.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
-.spain{
+#spain{
     background-image: url(Images/spain.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
-.portugal{
+#portugal{
     background-image: url(Images/portugal.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 }
-.unitedstates{
+#unitedstates{
     background-image: url(Images/unitedstates.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
@@ -572,25 +572,25 @@ a:active {
     background-position: left 5px center;
     background-size: 12px;
 }
-.fish{
+#fish{
     background-image: url(Images/fish.png);
     background-repeat: no-repeat;
     background-position: left 2px center;
     background-size: 15px;
 }
-.chily{
+#chily{
     background-image: url(Images/chily.png);
     background-repeat: no-repeat;
     background-position: left 2px center;
     background-size: 15px;
 }
-.sweetdessert{
+#sweetdessert{
     background-image: url(Images/muffin.png);
     background-repeat: no-repeat;
     background-position: left 2px center;
     background-size: 15px;
 }
-.veal{
+#veal{
     background-image: url(Images/veal.png);
     background-repeat: no-repeat;
     background-position: left 2px center;
