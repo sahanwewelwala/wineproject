@@ -27,7 +27,7 @@
 }
 
 #shipto{
-    background-image: url(../Images/arrow.png);
+    background-image: url(Images/arrow.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 10px;
@@ -35,7 +35,7 @@
     left: 1500px;
 }
 #language{
-    background-image: url(../Images/arrow.png);
+    background-image: url(Images/arrow.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 10px;
@@ -43,7 +43,7 @@
     left: 1600px;
 }
 .signin{
-    background-image: url(../Images/signin.png);
+    background-image: url(Images/signin.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 20px;
@@ -75,31 +75,31 @@
     outline: none;
 }
 #wine{
-    background-image: url(../Images/Wine-Glass-icon.png);
+    background-image: url(Images/Wine-Glass-icon.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 20px;
 }
 #pairing{
-    background-image: url(../Images/Cheese.png);
+    background-image: url(Images/Cheese.png);
     background-repeat: no-repeat;
     background-position: left  center;
     background-size: 25px;
 }
 #grapes{
-    background-image: url(../Images/Grapes.png);
+    background-image: url(Images/Grapes.png);
     background-repeat: no-repeat;
     background-position: left -5px center;
     background-size: 50px;
 }
 #region{
-    background-image: url(../Images/Region.png);
+    background-image: url(Images/Region.png);
     background-repeat: no-repeat;
     background-position: left  center;
     background-size: 20px;
 }
 #award{
-    background-image: url(../Images/award.png);
+    background-image: url(Images/award.png);
     background-repeat: no-repeat;
     background-position: left  center;
     background-size: 15px;
@@ -241,7 +241,7 @@ select {
     padding: 15px;
     border-radius: 30px;
     outline: none;
-    background-image: url(../Images/arrow.png);
+    background-image: url(Images/arrow.png);
     background-repeat: no-repeat;
     background-position: right 20px center;
     background-size: 15px;
@@ -499,99 +499,99 @@ a:active {
 
 }
 .argentina{
-    background-image: url(../Images/argentina.png);
+    background-image: url(Images/argentina.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
 .australia{
-    background-image: url(../Images/australia.png);
+    background-image: url(Images/australia.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
 .austria{
-    background-image: url(../Images/austria.png);
+    background-image: url(Images/austria.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
 .chile{
-    background-image: url(../Images/chile.png);
+    background-image: url(Images/chile.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
 .france{
-    background-image: url(../Images/france.png);
+    background-image: url(Images/france.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
 .germany{
-    background-image: url(../Images/germany.png);
+    background-image: url(Images/germany.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
 .italy{
-    background-image: url(../Images/italy.png);
+    background-image: url(Images/italy.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
 .spain{
-    background-image: url(../Images/spain.png);
+    background-image: url(Images/spain.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 
 }
 .portugal{
-    background-image: url(../Images/portugal.png);
+    background-image: url(Images/portugal.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 }
 .unitedstates{
-    background-image: url(../Images/unitedstates.png);
+    background-image: url(Images/unitedstates.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 10px;
 }
 .poultry{
-    background-image: url(../Images/poultry.png);
+    background-image: url(Images/poultry.png);
     background-repeat: no-repeat;
     background-position: left 5px center;
     background-size: 12px;
 }
 .fish{
-    background-image: url(../Images/fish.png);
+    background-image: url(Images/fish.png);
     background-repeat: no-repeat;
     background-position: left 2px center;
     background-size: 15px;
 }
 .chily{
-    background-image: url(../Images/chily.png);
+    background-image: url(Images/chily.png);
     background-repeat: no-repeat;
     background-position: left 2px center;
     background-size: 15px;
 }
 .sweetdessert{
-    background-image: url(../Images/muffin.png);
+    background-image: url(Images/muffin.png);
     background-repeat: no-repeat;
     background-position: left 2px center;
     background-size: 15px;
 }
 .veal{
-    background-image: url(../Images/veal.png);
+    background-image: url(Images/veal.png);
     background-repeat: no-repeat;
     background-position: left 2px center;
     background-size: 15px;
