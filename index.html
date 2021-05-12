@@ -6,376 +6,390 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <title>Red Wine</title>
-    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="style.css">
     <script src="Mainpage.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <img src="Images/vivino-logo.png" class="logo">
-            <input type="text" placeholder="Search any wine.." class="searchbar">
-            <button  class="signin"><a href="#" id="signin"> </a></button>
-                <div class="dropdown" id="shipto">
-                    <button class="dropbtn" ><a href="#"> Ship To</a>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content" >
-                        <h4>Red</h4>
-                        <a href="#">Australia </a>
-                        <a href="#">Belgium</a>
-                        <a href="#">Brazil</a>
-                        <a href="#">Canada</a>
-                        <a href="#">Denmark</a>
-                    </div>
-                </div>
-                <div class="dropdown" id="language">
-                    <button class="dropbtn"><a href="#"> Language</a>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">English</a>
-                        <a href="#">Dansk</a>
-                        <a href="#">Detsch</a>
-                        <a href="#">Español</a>
-                        <a href="#">Italiano</a>
-                        <a href="#">Svenska</a>
+<div class="container">
+    <div class="navbar">
+        <nav class="firstnav">
+            <div class="leftnav">
+            <a href="#"  ><img CLASS="logo" src="Images/vivino-logo.png"></a>
+            <input type="text" placeholder="Search any wine" class="searchbar">
+            </div>
+            <div class="rightnav">
 
-                    </div>
-                </div>
-            <div class="topnav" id="myTopnav">
-                <div class="dropdown">
-                    <button class="dropbtn" id="wine"><a href="#"> Wine</a>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <h4>Red</h4>
-                        <a href="#">Southern Italy Red</a>
-                        <a href="#">Tuscan Red</a>
-                        <a href="#">Spanish Rioja Red</a>
-                        <a href="#">South African Pinotage</a>
-                        <a href="#">Italian Amarone</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn" id="pairing"><a href="#"> Pairing</a>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Beef</a>
-                        <a href="#">Veal</a>
-                        <a href="#">Pork</a>
-                        <a href="#">Game</a>
-                        <a href="#">Poultry</a>
-                        <a href="#">Mushrooms</a>
+                <div class="custom-select" style="width:100px;">
+                    <select id="shipto">
+                        <option img src=" ./Images/arrow.png" width="20px"> Ship To</option>
+                        <option value="1">Highest User Rating</option>
+                        <option value="2">Discount</option>
+                        <option value="3">Price: Low To High
+                        <option value="4">Price Hight To Low</option>
+                        <option value="2">Popular</option>
+                    </select>
+                    <!-- Write your comments here-->
+                    <label for="language"id="labellanguage">Language</label>
+                    <select id="language">
+                        <option img src=" ./Images/arrow.png" width="20px"> English</option>
+                        <option value="1">Highest User Rating</option>
+                        <option value="2">Discount</option>
+                        <option value="3">Price: Low To High
+                        <option value="4">Price Hight To Low</option>
+                        <option value="2">Popular</option>
+                    </select>
 
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn" id="grapes"><a href="#"> Grapes</a>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
 
-                        <a href="#">Carernet Sauvignon</a>
-                        <a href="#">Montepaulicano</a>
-                        <a href="#">Chardonnay</a>
-                        <a href="#">Pinot Noir</a>
-                        <a href="#">Malbec</a>
-                    </div>
                 </div>
-                <div class="dropdown">
-                    <button class="dropbtn" id="region"><a href="#"> Regions</a>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <h4>Germany</h4>
-                        <a href="#">Mosel</a>
-                        <a href="#">Pfalz</a>
-                        <a href="#">Rheingau</a>
-                    </div>
+                <button class="signin"><a href="#" id="signin"> </a></button>
+        </div>
+        </nav>
+        <nav class="second-nav">
+        <div class="topnav" id="myTopnav">
+            <div class="dropdown">
+                <button class="dropbtn" id="wine"><a href="#"> Wines</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <h4>Red</h4>
+                    <a href="#">Southern Italy Red</a>
+                    <a href="#">Tuscan Red</a>
+                    <a href="#">Spanish Rioja Red</a>
+                    <a href="#">South African Pinotage</a>
+                    <a href="#">Italian Amarone</a>
                 </div>
-                <div class="dropdown">
-                    <button class="dropbtn" id="award"><a href="#"> Award</a>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" id="pairing"><a href="#"> Pairings</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Beef</a>
+                    <a href="#">Veal</a>
+                    <a href="#">Pork</a>
+                    <a href="#">Game</a>
+                    <a href="#">Poultry</a>
+                    <a href="#">Mushrooms</a>
 
                 </div>
             </div>
+            <div class="dropdown">
+                <button class="dropbtn" id="grapes"><a href="#"> Grapes</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
 
-           </nav>
-        </div>
-    </div>
-    </div>
-    <div class="container2">
-        <h2> Showing 14086 Red wines between $0-$500 rated above 4.5 stars</h2>
-        <div class="custom-select" style="width:100px;">
-            <select>
-"
-                <option  img src=" ./Images/arrow.png" width="20px" > Sort</option>
-                <option value="1">Highest User Rating</option>
-                <option value="2">Discount</option>
-                <option value="3">Price: Low To High
-                <option value="4">Price Hight To Low</option>
-                <option value="2">Popular</option>
-
-            </select>
-        </div>
-    </div>
-    <div class="container3">
-        <h2>Wine Types</h2>
-        <button class="btn">Red</button>
-        <button class="btn">White</button>
-        <button class="btn">Rose</button>
-        <br>
-        <button class="btn">Dessert</button>
-        <button class="btn">Fortified</button>
-        <button class="btn">Sparkling</button>
-
-    </div>
-    <div class="container4">
-        <h2>Price Range</h2>
-        <div class="slidecontainer">
-            <p id="demo">$0 </p>
-            <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
-        </div>
-
-    </div>
-    <div class="container5">
-        <h2>Vivino User Rating</h2>
-        <img src="Images/ratings.png" id="ratings">
-        <br>
-        <br>
-        <label class="container-radio" id="4stars">Rare & extraordinary
-            <input type="radio" checked="checked" name="radio">
-            <span class="checkmark"></span>
-        </label>
-        <label class="container-radio">Very good stuff
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>
-        </label>
-        <label class="container-radio">Good stuff
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>
-        </label>
-        <label class="container-radio">Average
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>
-        </label>
-        <label class="container-radio">Any Rating
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>
-        </label>
-    </div>
-    <div class="container6">
-        <h2>Grapes</h2>
-        <input type="text" placeholder="Search Grapes.." class="searchbar2">
-        <button class="btn">Cabernet Franc</button>
-        <button class="btn">Cabernet Sauvignon</button>
-        <button class="btn">Chardonary</button>
-        <br>
-        <button class="btn">Grenache</button>
-        <button class="btn">Malbec</button>
-        <button class="btn">Merlot</button>
-        <button class="btn">Pinot Noir</button>
-        <br>
-        <button class="btn">Riesling</button>
-        <button class="btn">Sauvignon Blanc</button>
-        <button class="btn">Shiraz/Syrah</button>
-
-    </div>
-    <div class="container7">
-        <h2>Regions</h2>
-        <input type="text" placeholder="Search Regions.." class="searchbar2">
-        <button class="btn">Bordeaux</button>
-        <button class="btn">Bourgogne </button>
-        <button class="btn">Napa Valley</button>
-        <button class="btn">Piemonte</button>
-        <br>
-        <button class="btn">Rhone Valley</button>
-        <button class="btn">Toscana</button>
-    </div>
-    <div class="container8">
-        <h2>Countries</h2>
-        <input type="text" placeholder="Search Countries.." class="searchbar2">
-        <button class="btn" id="argentina">Argentina</button>
-        <button class="btn" id="australia">Australia</button>
-        <button class="btn" id="austria">Austria</button>
-        <button class="btn" id="chile">Chile</button>
-        <br>
-        <button class="btn" id="france">France</button>
-        <button class="btn" id="germany">Germany</button>
-        <button class="btn" id="italy">Italy</button>
-        <button class="btn" id="portugal">Portugal</button>
-        <br>
-        <button class="btn" id="spain">Spain</button>
-        <button class="btn" id="unitedstates">United States</button>
-
-    </div>
-    <div class="container9">
-        <h2>Wine Styles</h2>
-        <input type="text" placeholder="Search Wine Styles.." class="searchbar2">
-        <button class="btn" >Argentinian Malbec</button>
-        <button class="btn" >Californian Cabernet Sauvignon</button>
-        <br>
-        <button class="btn" >Central Italy Red</button>
-        <button class="btn" >Spanish Red</button>
-        <button class="btn" >Spanish Rioja Red</button>
-
-    </div>
-    <div class="container10">
-        <h2>Food pairings</h2>
-        <input type="text" placeholder="Search Food pairings.." class="searchbar2">
-        <button class="btn" id="poultry">Poultry</button>
-        <button class="btn" id="fish">Rich fish(salmon,tuna etc)</button>
-        <br>
-        <button class="btn" id="chily">Spicy food</button>
-        <button class="btn" id="sweetdessert">Sweet desserts</button>
-        <button class="btn" id="veal">Veal</button>
-        <br>
-        <a href="#"><h6>Show All</h6></a>
-    </div>
-    <div class="containerwine1">
-                <img src="Images/L33jsYUuTMWTMy3KoqQyXg_pb_x600.png" id="wineimg-1"/>
-            <div class="bottleinformatin1">
-                <a href="">Cartuxa <br>
-                    <b>Pêra-Manca Tinto 1990</b>
-                </a>
-                <br>
-                <br>
-                Red Wine from Alentejo
-                <br>
-                Portugal
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h3>4.9</h3>
-                <img src="Images/Stars.png" width="80px"/>
-                <br>
-                <p>85 ratings</p>
+                    <a href="#">Carernet Sauvignon</a>
+                    <a href="#">Montepaulicano</a>
+                    <a href="#">Chardonnay</a>
+                    <a href="#">Pinot Noir</a>
+                    <a href="#">Malbec</a>
+                </div>
             </div>
-            <div class="bottleComment1">
-                <img src="Images/1star.png" width="25"/>
-                Among top 1% of all wines
-                <br>in the world
-              </div>
-        <br>
-    </div>
-    <div class="containerwine2">
+            <div class="dropdown">
+                <button class="dropbtn" id="region"><a href="#"> Regions</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <h4>Germany</h4>
+                    <a href="#">Mosel</a>
+                    <a href="#">Pfalz</a>
+                    <a href="#">Rheingau</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" id="award"><a href="#"> Award</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
 
-        <div class="bottleinformatin2">
-            <a href="">Sine Qua Non  <br>
+            </div>
+        </div>
+    </nav>
+</div>
+</div>
+<div class="uppermargin">
+
+</div>
+<div class="container2">
+    <h2> <b>Showing 14086 Red wines between $0-$500 rated above 4.5 stars</b></h2>
+    <div class="custom-select" style="width:100px;">
+        <select id="user-rating">
+            <option img src=" ./Images/arrow.png" width="20px"> Sort</option>
+            <option value="1">Highest User Rating</option>
+            <option value="2">Discount</option>
+            <option value="3">Price: Low To High
+            <option value="4">Price Hight To Low</option>
+            <option value="2">Popular</option>
+
+        </select>
+    </div>
+</div>
+<div class="container3">
+    <h2>Wine Types</h2>
+    <div class="flexclass" style="flex-direction:row;">
+        <p id="selectmultiplelabel" style="align-items: flex-end">Select multiple</p>
+    </div>
+    <br>
+    <button class="btnfirstcolumn">Red</button>
+    <button class="btnfirstcolumn">White</button>
+    <button class="btnfirstcolumn">Rose</button>
+    <br>
+    <button class="btnfirstcolumn">Dessert</button>
+    <button class="btnfirstcolumn">Fortified</button>
+    <button class="btnfirstcolumn">Sparkling</button>
+
+</div>
+
+<div class="container4">
+    <h2>Price Range</h2>
+    <div class="slidecontainer">
+        <div class="flexclass" style="flex-direction:row;">
+            <p id="demo2" style="align-items: flex-end">$500+</p>
+        </div>
+        <label for="myRange" id="sliderlabel">$0</label>
+        <br>
+        <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+    </div>
+</div>
+
+<div class="container5">
+    <h2>Vivino User Rating</h2>
+    <img src="Images/ratings.png" id="ratings">
+    <br>
+    <br>
+    <label class="container-radio" ><label id="4starslabel" for="4stars">Rare & extraordinary</label>
+        <input id="4stars" type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+    </label>
+    <label class="container-radio">Very good stuff
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+    </label>
+    <label class="container-radio">Good stuff
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+    </label>
+    <label class="container-radio">Average
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+    </label>
+    <label class="container-radio">Any Rating
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+    </label>
+</div>
+<div class="container6">
+    <h2>Grapes</h2>
+    <input type="text" placeholder="Search Grapes.." class="searchbar2">
+    <button class="btn">Cabernet Franc</button>
+    <button class="btn">Cabernet Sauvignon</button>
+    <button class="btn">Chardonary</button>
+    <br>
+    <button class="btn">Grenache</button>
+    <button class="btn">Malbec</button>
+    <button class="btn">Merlot</button>
+    <button class="btn">Pinot Noir</button>
+    <br>
+    <button class="btn">Riesling</button>
+    <button class="btn">Sauvignon Blanc</button>
+    <button class="btn">Shiraz/Syrah</button>
+
+</div>
+<div class="container7">
+    <h2>Regions</h2>
+    <input type="text" placeholder="Search Regions.." class="searchbar2">
+    <button class="btn">Bordeaux</button>
+    <button class="btn">Bourgogne</button>
+    <button class="btn">Napa Valley</button>
+    <button class="btn">Piemonte</button>
+    <br>
+    <button class="btn">Rhone Valley</button>
+    <button class="btn">Toscana</button>
+</div>
+<div class="container8">
+    <h2>Countries</h2>
+    <input type="text" placeholder="Search Countries.." class="searchbar2">
+    <button class="btn" id="argentina">Argentina</button>
+    <button class="btn" id="australia">Australia</button>
+    <button class="btn" id="austria">Austria</button>
+    <button class="btn" id="chile">Chile</button>
+    <br>
+    <button class="btn" id="france">France</button>
+    <button class="btn" id="germany">Germany</button>
+    <button class="btn" id="italy">Italy</button>
+    <button class="btn" id="portugal">Portugal</button>
+    <br>
+    <button class="btn" id="spain">Spain</button>
+    <button class="btn" id="unitedstates">United States</button>
+
+</div>
+<div class="container9">
+    <h2>Wine Styles</h2>
+    <input type="text" placeholder="Search Wine Styles.." class="searchbar2">
+    <button class="btn">Argentinian Malbec</button>
+    <button class="btn">Californian Cabernet Sauvignon</button>
+    <br>
+    <button class="btn">Central Italy Red</button>
+    <button class="btn">Spanish Red</button>
+    <button class="btn">Spanish Rioja Red</button>
+
+</div>
+<div class="container10">
+    <h2>Food pairings</h2>
+    <input type="text" placeholder="Search Food pairings.." class="searchbar2">
+    <button class="btn" id="poultry">Poultry</button>
+    <button class="btn" id="fish">Rich fish(salmon,tuna etc)</button>
+    <br>
+    <button class="btn" id="chily">Spicy food</button>
+    <button class="btn" id="sweetdessert">Sweet desserts</button>
+    <button class="btn" id="veal">Veal</button>
+    <br>
+    <a href="#"><h6>Show All</h6></a>
+</div>
+<div class="containerwine1">
+
+
+    <div class="bottleinformatin1">
+        <div class="container-img-bg-4">
+            <img src="Images/L33jsYUuTMWTMy3KoqQyXg_pb_x600.png" id="wineimg-1"/>
+        </div>
+        <a href="">Cartuxa <br>
+            <b>Pêra-Manca Tinto 1990</b>
+        </a>
+        <br>
+        <br>
+        Red Wine from Alentejo
+        <br>
+        Portugal
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>4.9</h3>
+        <img src="Images/Stars.png" width="80px"/>
+        <br>
+        <p>85 ratings</p>
+    </div>
+
+    <br>
+</div>
+<div class="containerwine2">
+
+    <div class="bottleinformatin2">
+        <a href="">Sine Qua Non <br>
+            <div class="container-img-bg-1">
                 <img src="Images/DtBMhsMBTtiA4URvVaUBNA_pb_x300.png" id="wineimg-2">
-                <b>Rattrapante Grenache 2012</b>
-            </a>
-            <br>
-            <br>
-            Red wine from Sta. Rita Hills ·
-            <br>
-            United States
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h3>4.9</h3>
-            <img src="Images/Stars.png" width="80px"/>
-            <br>
-            <p>69 ratings</p>
-        </div>
-        <div class="bottleComment2">
-            <img src="Images/1star.png" width="25"/>
-            084:13:3 Grenache:Syrah:Petite Sirah. Graceful and....
-            <br>
-            Vinchel (1904 ratings)
-            <br>in the world
-        </div>
-        <br>
-    </div>
-    <div class="containerwine3">
+            </div>
 
-        <div class="bottleinformatin3">
-            <a href="">Hundred Acre  <br>
-                <img src="Images/PBhGMcRNQ7aVnVNr7VgnWA_pb_x300.png" id="wineimg-3" />
-                <b>Wraith Cabernet Sauvignon 2014</b>
-            </a>
-            <br>
-            <br>
-            Red wine from Napa Valley ·
-            <br>
-            United States
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h3>4.9</h3>
-            <img src="Images/Stars.png" width="80px"/>
-            <br>
-            <p>66 ratings</p>
-        </div>
-        <div class="bottleComment3">
-            <img src="Images/1star.png" width="25"/>
-            This vintage rates better
-            <br>
-            than any other year for
-            <br>
-            this wine
-        </div>
+            <b>Rattrapante Grenache 2012</b>
+        </a>
         <br>
-    </div>
-    <div class="containerwine4">
+        <br>
+        Red wine from Sta. Rita Hills ·
+        <br>
+        United States
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>4.9</h3>
 
-        <div class="bottleinformatin3">
-            <a href="">Amici <br>
-                <img src="Images/0667TG7qS2KsRLsShMTjAw_pb_x300.png" id="wineimg-4"/>
-                <b>Echion Cabernet Sauvignon 2014</b>
-            </a>
-            <br>
-            <br>
-            Red wine from Oakville ·
-            <br>
-            United States
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h3>4.9</h3>
-            <img src="Images/Stars.png" width="80px"/>
-            <br>
-            <p>68 ratings</p>
-        </div>
+        <img src="Images/Stars.png" width="80px"/>
+        <br>
+        <p>69 ratings</p>
+    </div>
+    <div class="bottleComment2">
+        <img src="Images/5.0stars.png" width="250"/>
+
+        <br>
 
         <br>
     </div>
-    <div class="vivinodetails">
+    <br>
+</div>
+<div class="containerwine3">
+
+    <div class="bottleinformatin3">
+        <a href="">Hundred Acre <br>
+            <div class="container-img-bg-2">
+            <img src="Images/PBhGMcRNQ7aVnVNr7VgnWA_pb_x300.png" id="wineimg-3"/>
+            </div>
+            <b>Wraith Cabernet Sauvignon 2014</b>
+        </a>
         <br>
         <br>
-        <h2><b>Trusted by millions to discover and buy the right wine every time</b></h2>
-        <img src="Images/vivinodetailspng.PNG " id="vivinodetails">
-
+        Red wine from Napa Valley ·
+        <br>
+        United States
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>4.9</h3>
+        <img src="Images/Stars.png" width="80px"/>
+        <br>
+        <p>66 ratings</p>
     </div>
-    <div class="footer">
-        <div class="footerdetails">
-            <img src="Images/applestore.png" id="appstore"/>
-            <img src="Images/playstore.png" id="playstore"/>
-            <img src="Images/664-6649889_stripe-payment-gateway-png-transparent-png.png" id="payment"/>
-            <br>
-        </div>
+    <div class="bottleComment3">
+        <img src="Images/1star.png" width="25"/>
+        This vintage rates better
+        <br>
+        than any other year for
+        <br>
+        this wine
+    </div>
+    <br>
+</div>
+<div class="containerwine4">
 
+    <div class="bottleinformatin3">
+        <a href="">Amici <br>
+            <div class="container-img-bg-3">
+            <img src="Images/0667TG7qS2KsRLsShMTjAw_pb_x300.png" id="wineimg-4"/>
+            </div>
+            <b>Echion Cabernet Sauvignon 2014</b>
+        </a>
+        <br>
+        <br>
+        Red wine from Oakville ·
+        <br>
+        United States
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>4.9</h3>
+        <img src="Images/Stars.png" width="80px"/>
+        <br>
+        <p>68 ratings</p>
     </div>
 
+    <br>
+</div>
+<div class="vivinodetails">
+    <br>
+    <br>
+    <h2><b>Trusted by millions to discover and buy the right wine every time</b></h2>
+    <img src="Images/vivinodetailspng.PNG " id="vivinodetails">
 
+</div>
+<div class="footer">
+    <div class="footerdetails">
+        <img src="Images/applestore.png" id="appstore"/>
+        <img src="Images/playstore.png" id="playstore"/>
+        <img src="Images/664-6649889_stripe-payment-gateway-png-transparent-png.png" id="payment"/>
+        <br>
+    </div>
 
-
-
-
+</div>
 
 
 </body>

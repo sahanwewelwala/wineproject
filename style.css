@@ -1,78 +1,157 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Graphik Regular";
     box-sizing: border-box;
-}
 
+}
+body{
+    background-color:#fafafa;
+    max-height: 1000px;
+}
 .container {
-    width: 100%;
-    min-height: 20vh;
-    border-style: solid 2px;
-    padding-left: 20%;
-    padding-right: 8%;
-    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.2);
+    border-style: none;
+    width: 1903px;
+    height: 128px;
+    box-shadow:0 1px 4px #a8a5a3;
     overflow: hidden;
+    font-size: 13px;
 }
 
-.navbar{
-    width: 100%;
+
+.firstnav{
+    position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    min-height: 64px;
+    height: 64px;
 }
+
+
+.leftnav{
+    display: flex;
+    align-content: flex-start;
+    padding: 0;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items:flex-start;
+}
+.rightnav{
+    display: flex;
+    align-content: flex-end;
+    flex-direction: row;
+    padding: 0;
+    width: 300.7px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 12px;
+
+}
+
+
 .logo{
-    width: 150px;
-    cursor: pointer;
-    margin: 30px 0;
+    width: 160px;
+    max-height: 300px;
+    vertical-align: middle;
+    font-family: "GraphikWeb", "Verdana", sans-serif;
+    font-size: 13px;
+    line-height: 1.53846154;
 }
 
 #shipto{
+    position: relative;
+    top: 25px;
+    color: #A8A5A3;
+    left: 110px;
+    background-size: 10px;
+    width: 60px;
+    border-style: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     background-image: url(Images/arrow.png);
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: 10px;
-    position: absolute;
-    left: 1500px;
+    font-size: 12px;
+    line-height: normal;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+
+
 }
+#labellanguage{
+    position: relative;
+    color: #A8A5A3;
+    left: 180px;
+}
+
 #language{
+    position: relative;
+    left: 180px;
+    background-size: 10px;
+    width: 70px;
+    border-style: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     background-image: url(Images/arrow.png);
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: 10px;
-    position: absolute;
-    left: 1600px;
+    font-size: 12px;
+    line-height: normal;
+    margin-right: 0;
+    outline: none;
+
 }
 .signin{
+    position: relative;
+    left: 150px;
     background-image: url(Images/signin.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 20px;
-    position: absolute;
-    left: 1725px;
     font-size: 17px;
     border: none;
     outline: none;
     color: black;
-    padding: 17px 16px;
+    padding:20px 0 25px 30px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
 }
 
 .searchbar{
-    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png');
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    color: #333;
+    min-width: 300px;
+    max-width: 300px;
+    background-image: url(./Images/searchicon.png);
+    background-position: 16px;
+    background-size: 16px;
     background-repeat: no-repeat;
-    background-position: left 10px center;
-    background-size: 30px;
-    height:30px;
-    padding-left:25px;
-    background-size: 20px;
-    border-radius: 15px;
-    position: relative;
-    border-style: solid;
-    padding: 15px 40px;
-    top: 5%;
     outline: none;
+    padding: 4px 0 4px 48px;
+    border: 1px solid #dedede;
+    transition: width .6s ease-in-out;
+    height: 40px;
+    background-color: #fafafa;
+    border-radius: 32px;
+}
+.second-nav{
+    position: relative;
+    display: flex;
+    max-width: 1216px;
+    align-content: flex-start;
+    justify-content: space-between;
+    min-height: 64px;
+    height: 64px;
 }
 #wine{
     background-image: url(Images/Wine-Glass-icon.png);
@@ -83,13 +162,13 @@
 #pairing{
     background-image: url(Images/Cheese.png);
     background-repeat: no-repeat;
-    background-position: left  center;
+    background-position: left -2px  center;
     background-size: 25px;
 }
 #grapes{
     background-image: url(Images/Grapes.png);
     background-repeat: no-repeat;
-    background-position: left -5px center;
+    background-position: left -15px center;
     background-size: 50px;
 }
 #region{
@@ -105,26 +184,27 @@
     background-size: 15px;
 }
 .topnav {
-    position: absolute;
-    top: 100px;
-    width: auto;
-    overflow: hidden;
-    background-color: white;
+    position: relative;
+    padding: 0;
+    max-width: 800px;
+    max-height: 300px;
+    margin: 0 auto;
+
 }
 
 .topnav a {
     float: left;
     display: block;
-    color: black;
+    color: #1d1d1d;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 8px;
     text-decoration: none;
     font-size: 17px;
 }
 
 .active {
-    background-color: white;
-    color: black;
+    background-color: #fafafa;
+    color: #1d1d1d;
 }
 
 .topnav .icon {
@@ -133,6 +213,7 @@
 
 .dropdown {
     float: left;
+    position: relative;
     overflow: hidden;
 }
 
@@ -151,13 +232,14 @@
 .dropdown-content {
     display: none;
     position: relative;
-    background-color: #f9f9f9;
+    background-color: #fafafa;
     min-width: 20px;
     box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 h4{
     float: none;
+    font-family: "Graphik Medium";
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -199,7 +281,6 @@ h4{
 @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
-        position: absolute;
         right: 0;
         top: 0;
     }
@@ -217,18 +298,23 @@ h4{
     }
 
 }
+.uppermargin{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 12px;
+    padding-bottom: 64px;
+}
 .container2 {
     position: relative;
-
-    top: 100px;
     width: 100%;
-    min-height: 20vh;
-    border-style: solid 2px;
-    padding-left: 20%;
+    min-height: 10vh;
+    border-style: none;
+    padding-left: 18%;
     padding-right: 8%;
     overflow: hidden;
+
 }
-select {
+#user-rating {
 
    background-size: 20px;
     -webkit-appearance: none;
@@ -236,7 +322,7 @@ select {
            /* Remove default arrow */
     width: 200px;
     position: relative;
-    right: -1000px;
+    right: -1050px;
     border-style: solid;
     padding: 15px;
     border-radius: 30px;
@@ -245,28 +331,65 @@ select {
     background-repeat: no-repeat;
     background-position: right 20px center;
     background-size: 15px;
-    image-resolution: 10px;
+
 
 }
 .container3 {
-    position: absolute;
-    top: 450px;
+    top: 5px;
     width: 45%;
     min-height: 20vh;
-    border-style: solid 2px;
+    border:none;
     padding-left: 20%;
     text-align: left;
     padding-right: 8px;
     overflow: hidden;
 }
+#selectmultiplelabel{
+    position: relative;
+    top: -25px;
+    font-size: 13px;
+    left: 360px;
+}
 h5{
     position: relative;
     padding-left:70%;
 }
-.btn{
-    background-color: white;
+.btnfirstcolumn{
+    background-color: #fafafa;
     color: #c0392b;
-    border: solid 2px;
+    border: solid 1px;
+    padding: 8px;
+    min-width: 120px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 7px 12px;
+}
+.btnfirstcolumn:focus {
+    background-color: #c0392b;
+    border: none;
+    color: #fafafa;
+    padding: 8px;
+    min-width: 120px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 7px 12px;
+    cursor: pointer;
+}
+
+.btn{
+    background-color: #fafafa;
+    color: #c0392b;
+    border: solid 1px;
     border-color:  #c0392b;
     padding: 7px 20px;
     table-layout: fixed;
@@ -278,13 +401,13 @@ h5{
     font-size: 12px;
     margin: 12px 3px;
     cursor: pointer;
+
 }
 .btn:focus{
     background-color: #c0392b;
     border: none;
-    color: white;
-    border: solid 2px;
-    padding: 7px 20px;
+    color: #fafafa;
+    padding: 8px;
     table-layout: fixed;
     border-collapse: collapse;
     text-align: center;
@@ -296,20 +419,29 @@ h5{
     cursor: pointer;
 }
 .container4 {
-    position: absolute;
-    top: 700px;
+    position: relative;
+    top: 30px;
     width: 45%;
     min-height: 15vh;
-    border-style: solid 2px;
+    border-style:solid 2px;
     padding-left: 20%;
     text-align: left;
     padding-right: 8px;
     overflow: hidden;
 }
+#demo2{
+    position: relative;
+    left: 405px;
+    font-size: 13px;
+    top: 20px;
+}
+#sliderlabel{
+    font-size: 13px;
+}
 .slider {
     -webkit-appearance: none;
-    width: 70%;
-    height: 2px;
+    width: 95%;
+    height: 4px;
     border-radius: 5px;
     background:#c0392b;
     outline: none;
@@ -326,17 +458,29 @@ h5{
     background:#c0392b;
     cursor: pointer;
 }
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:#c0392b;
+    cursor: pointer;
+}
 
 .slider::-moz-range-thumb {
     width: 15px;
     height: 15px;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 50%;
     background: #c0392b;
     cursor: pointer;
 }
+
+
 .container5 {
     position: absolute;
-    top: 850px;
+    top: 675px;
     width: 45%;
     min-height: 50vh;
     border-style: solid 2px;
@@ -351,6 +495,10 @@ h5{
     left: 575px;
     width: 140px;
 }
+#4starslabel{
+    position: relative;
+    left:50px;
+}
 .container-radio {
     background-repeat: no-repeat;
     background-position: left 5px center;
@@ -363,6 +511,7 @@ h5{
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 15px;
+
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -380,10 +529,10 @@ h5{
 /* Create a custom radio button */
 .checkmark {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
+    top: 0px;
+    left: 9px;
+    height: 16px;
+    width: 16px;
     background-color: #eee;
     border-radius: 100%;
 }
@@ -395,7 +544,7 @@ h5{
 
 /* When the radio button is checked, add a blue background */
 .container-radio input:checked ~ .checkmark {
-    background-color:#c0392b;
+    background-color:white;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -412,16 +561,16 @@ h5{
 
 /* Style the indicator (dot/circle) */
 .container-radio .checkmark:after {
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
+    top: 0px;
+    left: 0px;
+    width: 16px;
+    height: 16px;
     border-radius: 100%;
     background:#c0392b ;
 }
 .container6 {
-    position: absolute;
-    top: 1150px;
+    position: relative;
+    top: 350px;
     width: 45%;
     min-height: 50vh;
     border-style: solid 2px;
@@ -443,8 +592,8 @@ h5{
     outline: none;
 }
 .container7 {
-    position: absolute;
-    top: 1400px;
+    position: relative;
+    top: 150px;
     width: 45%;
     min-height: 50vh;
     border-style: solid 2px;
@@ -454,8 +603,8 @@ h5{
     overflow: hidden;
 }
 .container8 {
-    position: absolute;
-    top: 1600px;
+    position: relative;
+    top: -125px;
     width: 45%;
     min-height: 50vh;
     border-style: solid 2px;
@@ -465,8 +614,8 @@ h5{
     overflow: hidden;
 }
 .container9 {
-    position: absolute;
-    top: 1850px;
+    position: relative;
+    top: -325px;
     width: 45%;
     min-height: 50vh;
     border-style: solid 2px;
@@ -476,8 +625,8 @@ h5{
     overflow: hidden;
 }
 .container10 {
-    position: absolute;
-    top: 2050px;
+    position: relative;
+    top: -575px;
     width: 45%;
     min-height: 50vh;
     border-style: solid 2px;
@@ -596,31 +745,45 @@ a:active {
     background-position: left 2px center;
     background-size: 15px;
 }
+h3{
+    font-size: 40px;
+}
 .containerwine1{
-    position: absolute;
+    position: relative;
     background-color: white;
     left: 850px;
-    top: 450px;
+    top: -1825px;
+    border-radius: 10px;
     width: 40%;
     min-height: 30vh;
     border-style: solid 2px;
-    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.1);
+    box-shadow: 0 0 7px 0 rgba(0,0,0,.06);
     padding-left: 20%;
     text-align: left;
     padding-right: 8px;
     overflow: hidden;
 }
+.container-img-bg-4{
+    position: absolute;
+    background-color: #ece4cf;
+    align-content: center;
+    border-radius: 10px;
+    text-align: center;
+    left:-135px;
+    top: 0px;
+    width: 40%;
+    min-height: 27vh;
+    z-index: 0;
+}
 
 #wineimg-1{
     position: absolute;
-    top: 50px;
-    left: 60px;
+    left: 180px;
     width: 60px;
 
 }
 .bottleinformatin1{
     position: absolute;
-
     left: 150px;
     top: 10px;
     width: 40%;
@@ -638,31 +801,17 @@ a:active {
     min-height: 6vh;
     z-index: 1;
 }
-.containerwine1{
-    position: absolute;
-    background-color: white;
-    left: 850px;
-    top: 450px;
-    width: 40%;
-    min-height: 30vh;
-    border-style: solid 2px;
-    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.1);
-    padding-left: 20%;
-    text-align: left;
-    padding-right: 8px;
-    overflow: hidden;
-}
 
 #wineimg-1{
     position: absolute;
-    top: 50px;
-    left: 60px;
+    top: 30px;
+    left: 35px;
     width: 60px;
+    z-index: 10;
 
 }
 .bottleinformatin1{
     position: absolute;
-
     left: 150px;
     top: 10px;
     width: 40%;
@@ -681,30 +830,43 @@ a:active {
     z-index: 1;
 }
 .containerwine2{
-    position: absolute;
+    position: relative;
     background-color: white;
     left: 850px;
-    top: 750px;
+    top: -3050px;
+    border-radius: 10px;
     width: 40%;
     min-height: 30vh;
     border-style: solid 2px;
-    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.1);
+    box-shadow: 0 0 7px 0 rgba(0,0,0,.06);
     padding-left: 20%;
     text-align: left;
     padding-right: 8px;
     overflow: hidden;
 }
+.container-img-bg-1{
+    position: absolute;
+    background-color: #e7dcdb;
+    border-radius: 10px;
+    align-content: center;
+    text-align: center;
+    left:-135px;
+    top: 0px;
+    width: 40%;
+    min-height: 27vh;
+    z-index: 0;
+}
 
 #wineimg-2{
     position: absolute;
-    top: 50px;
-    left: -90px;
+    top: 30px;
+    left: 35px;
     width: 60px;
+    z-index: 10;
 
 }
 .bottleinformatin2{
     position: absolute;
-
     left: 150px;
     top: 10px;
     width: 40%;
@@ -714,34 +876,48 @@ a:active {
 
 .bottleComment2{
     position: absolute;
-    background-color: #f5f5f5;
     text-align: center;
     left: 500px;
     top: 10px;
     width: 32%;
+    font-size: 20px;
     min-height: 6vh;
     z-index: 1;
 }
 .containerwine3{
-    position: absolute;
+    position: relative;
     background-color: white;
     left: 850px;
-    top: 1050px;
+    top: -3030px;
+    border-radius: 10px;
     width: 40%;
     min-height: 30vh;
     border-style: solid 2px;
-    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.1);
+    box-shadow: 0 0 7px 0 rgba(0,0,0,.06);
     padding-left: 20%;
     text-align: left;
     padding-right: 8px;
     overflow: hidden;
 }
+.container-img-bg-2{
+    position: absolute;
+    background-color: #d8d9d3;
+    border-radius: 10px;
+    text-align: center;
+    left:-135px;
+    top: 0px;
+    width: 40%;
+    min-height: 27vh;
+    z-index: 0;
+}
+
 
 #wineimg-3{
     position: absolute;
-    top: 50px;
-    left: -90px;
+    top: 30px;
+    left: 30px;
     width: 60px;
+    z-index: 10;
 
 }
 .bottleinformatin3{
@@ -765,25 +941,38 @@ a:active {
     z-index: 1;
 }
 .containerwine4{
-    position: absolute;
+    position: relative;
     background-color: white;
     left: 850px;
-    top: 1350px;
+    top: -3008px;
+    border-radius: 10px;
     width: 40%;
     min-height: 30vh;
     border-style: solid 2px;
-    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.1);
+    box-shadow: 0 0 7px 0 rgba(0,0,0,.06);
     padding-left: 20%;
     text-align: left;
     padding-right: 8px;
     overflow: hidden;
 }
+.container-img-bg-3{
+    position: absolute;
+    background-color: #c9c0b3;
+    border-radius: 10px;
+    text-align: center;
+    left:-135px;
+    top: 0px;
+    width: 40%;
+    min-height: 27vh;
+    z-index: 0;
+}
 
 #wineimg-4{
     position: absolute;
-    top: 50px;
-    left: -90px;
+    top: 30px;
+    left: 30px;
     width: 60px;
+    z-index: 10;
 
 }
 .bottleinformatin4{
